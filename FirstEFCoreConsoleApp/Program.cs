@@ -11,7 +11,7 @@ namespace FirstEFCoreConsoleApp
         {
 
             using var context = new LibraryContext();
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
             var author = new Author { Name = "Stephen", LastName = "King" };
             var book = new Book { Title = "Los ojos del dragón", Sinopsis = "Prueba de un libro.", Author = author };
             context.Authors.Add(author);
